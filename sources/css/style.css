@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.container {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#first {
+    background-color: cornflowerblue;
+}
+
+.text-title {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.nav-hat-title {
+    color: var(--dark);
+}
+
+.useradd {
+    color: purple;
+    padding: 0px 5px 0px 0px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.butwrap {
+    display: flex;
+    padding: 8px 10px 0px 10px;
+    margin-bottom: 20px;
+    height: 36px;
+    width: 140px;
+    /* border: 1px solid black;*/
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
+}
+
+#second form {
+    margin: 20px 0;
+}
+
+.mainpart {
+    margin-top: 60px;
+}
+
+.userslist {
+    font-family: 'Barlow', sans-serif;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.userslist td,
+.userslist th {
+    padding: 20px;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid rgb(179, 179, 179);
+}
+
+
+.update-btn,
+.delete-btn {
+    margin: 10px 10px;
+    padding: 6px 15px 10px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 173, 173);
+    box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
+}
+
+
+.dark-head {
+    color: #fff;
+    background-color: rgb(44, 8, 90);
+}
+
+.userslist>tbody>tr:hover {
+    transition: 0.2s ease-out;
+    background-color: rgb(230, 209, 240);
+}
+
+.userslist>tbody:hover>tr .act-btns>a {
+    border: 1px solid rgb(173, 173, 173);
+    box-shadow: none;
+    background-color: rgb(203, 199, 253);
+    transition: 0.2s ease-out;
+}
