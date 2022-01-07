@@ -17,9 +17,9 @@ app.use(express.json());
 app.use('/', router);
 app.set("view engine", "ejs");
 
-app.use('/css', express.static(path.resolve(__dirname, "sources/css")));
-app.use('/img', express.static(path.resolve(__dirname, "sources/img")));
-app.use('/js', express.static(path.resolve(__dirname, "sources/js")));
+app.use("/css", express.static(path.resolve(__dirname, "sources/css")));
+app.use("/img", express.static(path.resolve(__dirname, "sources/img")));
+app.use("/js", express.static(path.resolve(__dirname, "sources/js")));
 
 
 let startApp = async () => {
