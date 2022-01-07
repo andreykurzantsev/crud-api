@@ -4,7 +4,8 @@ import express from "express";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import path from "path";
-import renderRouter from './server/routers/router.js';
+import router from "./server/routers/router.js";
+import { connectMongo } from "./server/database/connection.js";
 dotenv.config({ path: "var.env" });
 
 const PORT = process.env.PORT;
@@ -13,7 +14,7 @@ const __dirname = path.resolve();
 
 app.use(morgan("tiny"));
 app.use(express.json());
-app.use('/', renderRouter);
+app.use('/', router);
 app.set("view engine", "ejs");
 
 app.use('/css', express.static(path.resolve(__dirname, "sources/css")));
@@ -23,6 +24,7 @@ app.use('/js', express.static(path.resolve(__dirname, "sources/js")));
 
 let startApp = async () => {
     try {
+        await connectMongo();
         app.listen(PORT, () => console.log(`SERVER STARTED ON PORT ${PORT}`));
     } catch (error) {
         console.log("ERROR");

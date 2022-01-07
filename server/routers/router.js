@@ -3,10 +3,10 @@
 import Router from 'express';
 import renderProject from '../services/renderProject.js';
 
-const renderRouter = new Router();
+const router = new Router();
 
-renderRouter.get('/', renderProject.renderMainPage);
-renderRouter.get('/addUser', renderProject.renderUserAddPage);
-renderRouter.get('/updateUser', renderProject.renderUserUpdatePage);
+router.get('/', renderProject.renderMainPage);
+router.get('/addUser', renderProject.renderUserAddPage);
+router.get('/updateUser', renderProject.renderUserUpdatePage);
 
-export default renderRouter;
+export default router;
