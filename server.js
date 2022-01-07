@@ -4,6 +4,7 @@ import express from "express";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import path from "path";
+import renderRouter from './server/routers/router.js';
 dotenv.config({ path: "var.env" });
 
 const PORT = process.env.PORT;
@@ -12,39 +13,12 @@ const __dirname = path.resolve();
 
 app.use(morgan("tiny"));
 app.use(express.json());
-//app.set("views", path.resolve(__dirname, "views"));
+app.use('/', renderRouter);
 app.set("view engine", "ejs");
 
 app.use('/css', express.static(path.resolve(__dirname, "sources/css")));
 app.use('/img', express.static(path.resolve(__dirname, "sources/img")));
 app.use('/js', express.static(path.resolve(__dirname, "sources/js")));
-
-app.get('/', (req, res) => {
-    try {
-        res.status(200).render('index.ejs');
-    } catch (error) {
-        res.status(500).json(error.message);
-    }
-
-});
-
-app.get('/addUser', (req, res) => {
-    try {
-        res.status(200).render('addUser.ejs');
-    } catch (error) {
-        res.status(500).json(error.message);
-    }
-
-});
-
-app.get('/updateUser', (req, res) => {
-    try {
-        res.status(200).render('updateUser.ejs');
-    } catch (error) {
-        res.status(500).json(error.message);
-    }
-
-});
 
 
 let startApp = async () => {
