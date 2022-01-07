@@ -1,72 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partitions/header.ejs') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>crud app</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-
-    <header class="header">
-        <nav>
-            <div class="container" id="first">
-                <div class="text-title">
-                    <a href="/" class="nav-hat-title">User Management System</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="mainpart">
-        <div class="container" id="second">
-            <form action="/" method="POST">
-                <a href="/adduser" class="butwrap">
-                    <span class="useradd">New User</span>
-                    <img src="/img/user.png" alt="user" class="icon user">
-                </a>
-                <table class="userslist">
-                    <thead class="dark-head">
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Date of Birth</th>
-                            <th>Gender</th>
-                            <th>@mail</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>UserName</td>
-                            <td>01.01.2001</td>
-                            <td>Male</td>
-                            <td>hello12345@gmail.com</td>
-                            <td>Active</td>
-                            <td class="act-btns">
-                                <a href="#" class="update-btn">
-                                    <img src="/img/edit.png" alt="pencil" class="icon pen">
-                                </a>
-                                <a href="#" class="delete-btn">
-                                    <img src="/img/bin.png" alt="bin" class="icon bin">
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
+<main class="mainpart">
+    <div class="container" id="second">
+        <div class="child_container">
+            <a href="/adduser" class="butwrap">
+                <span class="useradd">New User</span>
+                <img src="/img/user.png" alt="user" class="icon user">
+            </a>
         </div>
-    </main>
+        <form action="/" method="POST">
+            <table class="userslist">
+                <thead class="dark-head">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Gender</th>
+                        <th>@mail</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-    <footer class="footer">
-        <script src="/js/script.js"></script>
-    </footer>
+                    <%- include('partitions/table_list.ejs') %>
 
-</body>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
 
-</html>
+<%- include('partitions/footer.ejs') %>

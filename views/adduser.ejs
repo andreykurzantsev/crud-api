@@ -1,0 +1,23 @@
+<%- include('partitions/header.ejs') %>
+
+<main class="mainpart">
+    <div class="container" id="second">
+        <div class="child-container">
+            <div class="filter">
+                <a href="/" class="all-users">
+                    <img src="/img/left-arrow.png" alt="arrow" class="icon arrow">
+                    <span class="useradd">All Users</span>
+                </a>
+            </div>
+        </div>
+        <div class="form-title t-a-c">
+            <h2>New User</h2>
+            <span class="create-user-descr">Use the below form to create new account</span>
+        </div>
+
+        <%- include('partitions/form.ejs') %>
+
+    </div>
+</main>
+
+<%- include('partitions/footer.ejs') %>
