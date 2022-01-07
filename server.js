@@ -28,9 +28,18 @@ app.get('/', (req, res) => {
 
 });
 
-app.get('/adduser', (req, res) => {
+app.get('/addUser', (req, res) => {
     try {
-        res.status(200).render('adduser.ejs');
+        res.status(200).render('addUser.ejs');
+    } catch (error) {
+        res.status(500).json(error.message);
+    }
+
+});
+
+app.get('/updateUser', (req, res) => {
+    try {
+        res.status(200).render('updateUser.ejs');
     } catch (error) {
         res.status(500).json(error.message);
     }
