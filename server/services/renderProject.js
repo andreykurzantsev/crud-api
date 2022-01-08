@@ -27,11 +27,24 @@ class Render {
         }
     }
     renderUserUpdatePage(req, res) {
-        try {
-            res.status(200).render("updateUser.ejs");
-        } catch (error) {
-            res.status(500).json(error.message);
-        }
+
+        fetch(`http://localhost:${process.env.PORT}/api/users/${req.query.id}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(userData => {
+                console.log(userData);
+                return userData.json();
+            })
+            .then(response => {
+                console.log(response);
+                res.status(200).render("updateUser.ejs", { user: response });
+            })
+            .catch(error => {
+                res.status(500).json(error.message);
+            });
     }
 }
 

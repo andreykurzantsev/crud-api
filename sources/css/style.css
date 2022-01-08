@@ -197,7 +197,7 @@ h6 {
     background-color: rgb(230, 209, 240);
 }
 
-.userslist>tbody:hover>tr .act-btns>a {
+.userslist>tbody:hover>tr:hover .act-btns>a {
     border: 1px solid rgb(173, 173, 173);
     box-shadow: none;
     background-color: rgb(203, 199, 253);

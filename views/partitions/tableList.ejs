@@ -8,7 +8,7 @@
     <td><%=users[i].gender %></td>
     <td><%=users[i].status %></td>
     <td class="act-btns">
-        <a href="/updateUser" class="update-btn">
+        <a href="/updateUser?id=<%= users[i]._id %>" class="update-btn">
             <img src="/img/edit.png" alt="pencil" class="icon pen">
         </a>
         <a href="#" class="delete-btn">
