@@ -14,6 +14,7 @@ const __dirname = path.resolve();
 
 app.use(morgan("tiny"));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use('/', router);
 app.set("view engine", "ejs");
 
