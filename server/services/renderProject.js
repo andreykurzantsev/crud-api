@@ -1,5 +1,3 @@
-"use strict";
-
 import fetch from 'node-fetch';
 
 class Render {
@@ -16,7 +14,7 @@ class Render {
         const URLtoALLUsers = `http://localhost:${process.env.PORT}/api/users`;
         Render.getUserData(URLtoALLUsers)
             .then(response => {
-                res.status(200).render("index.ejs", { users: response });
+                res.status(200).render('index.ejs', { users: response });
             })
             .catch(error => {
                 res.status(500).json(error.message);
@@ -25,7 +23,7 @@ class Render {
     }
     renderUserAddPage(req, res) {
         try {
-            res.status(200).render("addUser.ejs");
+            res.status(200).render('addUser.ejs');
         } catch (error) {
             res.status(500).json(error.message);
         }
@@ -35,7 +33,7 @@ class Render {
         Render.getUserData(URLtoUserbyId)
             .then(response => {
                 console.log(response);
-                res.status(200).render("updateUser.ejs", { user: response });
+                res.status(200).render('updateUser.ejs', { user: response });
             })
             .catch(error => {
                 res.status(500).json(error.message);

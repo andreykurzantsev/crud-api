@@ -1,80 +1,80 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
 :active {
-    outline: none;
+  outline: none;
 }
 
 a:focus,
 a:active {
-    outline: none;
+  outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-    display: block;
+  display: block;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 input,
 button,
 textarea {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 input::-ms-clear {
-    display: none;
+  display: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
 
 a,
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -83,32 +83,32 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    font-weight: 400;
+  font-size: inherit;
+  font-weight: 400;
 }
 
 .icon {
-    height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 .flexbet {
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: space-around;
-    height: 70px;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
 }
 
 .container {
-    max-width: 1024px;
-    margin: auto;
-    height: 70px;
+  max-width: 1024px;
+  margin: auto;
+  height: 70px;
 }
 
 /*.form {
@@ -116,198 +116,196 @@ h6 {
 }*/
 
 .child-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #first {
-    background-color: rgb(126, 170, 252);
+  background-color: rgb(126, 170, 252);
 }
 
 .text-title {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    margin-top: 15px;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 15px;
 }
 
 .nav-hat-title {
-    color: var(--dark);
+  color: var(--dark);
 }
 
 .useradd {
-    color: purple;
-    padding: 0px 5px 0px 0px;
-    font-size: 20px;
-    font-family: cursive;
+  color: purple;
+  padding: 0px 5px 0px 0px;
+  font-size: 20px;
+  font-family: cursive;
 }
 
 .butwrap {
-    display: flex;
-    padding: 8px 10px 0px 10px;
-    margin-bottom: 20px;
-    height: 36px;
-    width: 140px;
-    /* border: 1px solid black;*/
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
+  display: flex;
+  padding: 8px 10px 0px 10px;
+  margin-bottom: 20px;
+  height: 36px;
+  width: 140px;
+  /* border: 1px solid black;*/
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
 }
 
 #second form {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .mainpart {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .userslist {
-    font-family: 'Barlow', sans-serif;
-    border-spacing: 0;
-    width: 100%;
+  font-family: 'Barlow', sans-serif;
+  border-spacing: 0;
+  width: 100%;
 }
 
 .userslist td,
 .userslist th {
-    padding: 20px;
-    vertical-align: top;
-    text-align: center;
-    border-top: 1px solid rgb(179, 179, 179);
+  padding: 20px;
+  vertical-align: top;
+  text-align: center;
+  border-top: 1px solid rgb(179, 179, 179);
 }
-
 
 .update-btn,
 .delete-btn {
-    margin: 10px 10px;
-    padding: 6px 15px 10px 15px;
-    border-radius: 5px;
-    border: 1px solid rgb(173, 173, 173);
-    box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
+  margin: 10px 10px;
+  padding: 6px 15px 10px 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(173, 173, 173);
+  box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
 }
-
 
 .dark-head {
-    color: #fff;
-    background-color: rgb(44, 8, 90);
+  color: #fff;
+  background-color: rgb(44, 8, 90);
 }
 
-.userslist>tbody>tr:hover {
-    transition: 0.2s ease-out;
-    background-color: rgb(230, 209, 240);
+.userslist > tbody > tr:hover {
+  transition: 0.2s ease-out;
+  background-color: rgb(230, 209, 240);
 }
 
-.userslist>tbody:hover>tr:hover .act-btns>a {
-    border: 1px solid rgb(173, 173, 173);
-    box-shadow: none;
-    background-color: rgb(203, 199, 253);
-    transition: 0.2s ease-out;
+.userslist > tbody:hover > tr:hover .act-btns > a {
+  border: 1px solid rgb(173, 173, 173);
+  box-shadow: none;
+  background-color: rgb(203, 199, 253);
+  transition: 0.2s ease-out;
 }
 
 /*form*/
 
 .t-a-c {
-    font-family: 'Cairo', sans-serif;
-    text-align: center;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
 }
 
-.form-title>h2 {
-    font-size: 30px;
-    margin-bottom: 5px;
+.form-title > h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
 }
 
 .create-user-descr {
-    font-size: 18px;
-    color: rgb(131, 131, 131);
+  font-size: 18px;
+  color: rgb(131, 131, 131);
 }
 
 .radio-checker {
-    display: inline-block;
+  display: inline-block;
 }
 
 .form-group {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    color: rgb(46, 46, 46);
-    margin: 10px 0;
-    /*     margin-right: 300px; */
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  color: rgb(46, 46, 46);
+  margin: 10px 0;
+  /*     margin-right: 300px; */
 }
 
-#update_user .form-group input[type="text"],
-#add_user .form-group input[type="text"] {
-    width: 100%;
-    padding: 12px 10px;
-    margin: 5px 0;
-    border: 1px solid rgb(131, 131, 131);
-    font-family: 'Barlow', sans-serif;
-    font-size: 15px;
+#update_user .form-group input[type='text'],
+#add_user .form-group input[type='text'] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 5px 0;
+  border: 1px solid rgb(131, 131, 131);
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
 }
 
 #update_user .form-group .radio-checker,
 #add_user .form-group .radio-checker {
-    margin: 10px 20px;
+  margin: 10px 20px;
 }
 
 .btn-sub {
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    border: 0px solid rgb(131, 131, 131);
-    border-radius: 2px;
-    background-color: rgb(126, 170, 252);
-    box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: 0px solid rgb(131, 131, 131);
+  border-radius: 2px;
+  background-color: rgb(126, 170, 252);
+  box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
 }
 
 .btn-sub:hover {
-    transition: 0.2s ease-out;
-    background-color: rgb(44, 8, 90);
-    color: #fff;
+  transition: 0.2s ease-out;
+  background-color: rgb(44, 8, 90);
+  color: #fff;
 }
 
 .bin {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .delete-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* radio */
-.radio-checker input[type="radio"] {
-    position: absolute;
-    opacity: 0;
+.radio-checker input[type='radio'] {
+  position: absolute;
+  opacity: 0;
 }
 
-.radio-checker input[type="radio"]+.radio-label::before {
-    content: "";
-    background: rgb(247, 245, 245);
-    border-radius: 100%;
-    border: 1px solid rgb(175, 175, 175);
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    position: relative;
-    top: -0px;
-    margin-right: 7px;
-    vertical-align: bottom;
-    cursor: pointer;
-    text-align: center;
-    -webkit-transition: all 250ms ease;
-    transition: all 250ms ease;
+.radio-checker input[type='radio'] + .radio-label::before {
+  content: '';
+  background: rgb(247, 245, 245);
+  border-radius: 100%;
+  border: 1px solid rgb(175, 175, 175);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -0px;
+  margin-right: 7px;
+  vertical-align: bottom;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
 }
 
-.radio-checker input[type="radio"]:checked+.radio-label::before {
-    background-color: rgb(126, 170, 252);
-    box-shadow: inset 0 0 0 3px rgb(255, 255, 255);
+.radio-checker input[type='radio']:checked + .radio-label::before {
+  background-color: rgb(126, 170, 252);
+  box-shadow: inset 0 0 0 3px rgb(255, 255, 255);
 }
 
-.radio-checker input[type="radio"]:focus+.radio-label::before {
-    outline: none;
-    border-color: rgb(126, 170, 252);
+.radio-checker input[type='radio']:focus + .radio-label::before {
+  outline: none;
+  border-color: rgb(126, 170, 252);
 }
 
-.radio-checker input[type="radio"]:disabled+.radio-label::before {
-    border-color: rgb(231, 231, 231);
-    background: rgb(231, 231, 231);
-    box-shadow: inset 0 0 0 3px rgb(255, 255, 255);
+.radio-checker input[type='radio']:disabled + .radio-label::before {
+  border-color: rgb(231, 231, 231);
+  background: rgb(231, 231, 231);
+  box-shadow: inset 0 0 0 3px rgb(255, 255, 255);
 }

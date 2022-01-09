@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const AddForm = document.querySelector('#update_user');
 
@@ -13,7 +13,7 @@ const putData = async (url, data) => {
     return await res.json();
 };
 
-AddForm.addEventListener('submit', (event) => {
+AddForm.addEventListener('submit', event => {
     event.preventDefault();
     const formData = new FormData(AddForm);
     const objData = Object.fromEntries(formData.entries());
@@ -21,9 +21,9 @@ AddForm.addEventListener('submit', (event) => {
     putData(`http://localhost:5000/api/users/${objData.id}`, jsonData)
         .then(userData => console.log(userData))
         .then(() => {
-            alert("Data Changed Succesfuly");
+            alert('Data Changed Succesfuly');
             location.assign('/');
         })
         .then(() => location.assign('/'))
-        .catch(() => console.log("Error"));
+        .catch(() => console.log('Error'));
 });
