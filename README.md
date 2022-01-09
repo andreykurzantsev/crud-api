@@ -2,7 +2,7 @@
 
 ## My educational project for second course
 ***
-This is Simple Web service for adding information about users to the database. A server and a CRUD-api have been written for the project to access and manipulate records in the database. The client part and data collection from the form have also been worked out. **Project requires the dotenv environment variables.**
+This is Simple Web service receiving data from the user and writing them to the database. After adding data to the database, it is possible to delete and edit them.. A server and a CRUD-api have been written for the project to access and manipulate records in the database. The client part and data collection from the form have also been worked out. I used the templating engine (EJS) for Express Framework and implemented server-side rendering of the application. The client-side of API usage is implemented in pure JavaScript. **Project requires the dotenv environment variables.**
 
 
 #### Toolkit: 
