@@ -26,11 +26,11 @@
     <div class="form-group">
         <label for="gender" class="label">Status</label>
         <div class="radio-checker">
-            <input type="radio" name="status" id="radio-3" value="Actine" <%= typeof user == "undefined" ? '' : (user.status == "Active") ? "checked" : '' %>>
+            <input type="radio" name="status" id="radio-3" value="Active" <%= typeof user == "undefined" ? '' : (user.status == "Active") ? "checked" : '' %>>
             <label for="radio-3" class="radio-label">Active</label>
         </div>
         <div class="radio-checker">
-            <input type="radio" name="status" id="radio-4" value="Inactine" <%= typeof user == "undefined" ? '' : (user.status == "Inactive") ? "checked" : '' %>>
+            <input type="radio" name="status" id="radio-4" value="Inactive" <%= typeof user == "undefined" ? '' : (user.status == "Inactive") ? "checked" : '' %>>
             <label for="radio-4" class="radio-label">Inactive</label>
         </div>
     </div>

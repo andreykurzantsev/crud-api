@@ -264,6 +264,14 @@ h6 {
     color: #fff;
 }
 
+.bin {
+    pointer-events: none;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+}
+
 /* radio */
 .radio-checker input[type="radio"] {
     position: absolute;
