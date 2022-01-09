@@ -19,7 +19,7 @@ class UserController {
       .then(() => {
         res.redirect('/');
       })
-      .catch((err) => {
+      .catch(err => {
         res.status(500).send({
           message: err.message || 'Error while creating new user',
         });
@@ -27,10 +27,10 @@ class UserController {
   }
   async giveAllUsers(req, res) {
     await User.find()
-      .then((user) => {
+      .then(user => {
         res.send(user);
       })
-      .catch((err) => {
+      .catch(err => {
         res.status(500).send({
           message: err.message || 'Error while getting user information',
         });
@@ -39,7 +39,7 @@ class UserController {
   async giveOneUser(req, res) {
     const { id } = req.params;
     await User.findById(id)
-      .then((data) => {
+      .then(data => {
         if (!data) {
           res.status(404).send({
             messsage: `Cannot find user with id: ${id}`,
@@ -48,7 +48,7 @@ class UserController {
           res.send(data);
         }
       })
-      .catch((err) => {
+      .catch(err => {
         res.status(500).send({
           message: err.message || 'Error while getting information about user',
         });
@@ -62,7 +62,7 @@ class UserController {
     }
     const { id } = req.params;
     await User.findByIdAndUpdate(id, req.body, { new: true })
-      .then((data) => {
+      .then(data => {
         if (!data) {
           res.status(404).send({
             messsage: `Cannot find user with id: ${id}`,
@@ -80,7 +80,7 @@ class UserController {
   async deleteUser(req, res) {
     const { id } = req.params;
     await User.findByIdAndDelete(id)
-      .then((data) => {
+      .then(data => {
         if (!data) {
           res.status(404).send({
             messsage: `Cannot find user with id: ${id}`,
