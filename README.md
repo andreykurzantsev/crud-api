@@ -7,6 +7,7 @@ This is Simple Web service receiving data from the user and writing them to the 
 
 #### Toolkit: 
 + [Node JS](https://nodejs.org/en/about/)
++ [MongoDB](https://www.mongodb.com/)
 + [JavaScript](https://developer.mozilla.org/en/docs/Web/JavaScript)
 + [Express](http://expressjs.com/)
 + [EJS](https://ejs.co/)
@@ -20,5 +21,6 @@ This is Simple Web service receiving data from the user and writing them to the 
 #
 ##### Adding new user
 ![screen2](/sources/img/static/pict2.png)
+#
 ##### Editing user information
 ![screen3](/sources/img/static/pict3.png)
