@@ -7,7 +7,7 @@ This is Simple Web service receiving data from the user and writing them to the 
 
 #### Toolkit: 
 + [Node JS](https://nodejs.org/en/about/)
-+ [Js](https://developer.mozilla.org/en/docs/Web/JavaScript)
++ [JavaScript](https://developer.mozilla.org/en/docs/Web/JavaScript)
 + [Express](http://expressjs.com/)
 + [EJS](https://ejs.co/)
 + [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
