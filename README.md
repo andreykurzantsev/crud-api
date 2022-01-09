@@ -2,8 +2,7 @@
 
 ## My educational project for second course
 ***
-This is Simple Web service for adding information about users to the database. A server and a CRUD-api have been written for the project to access and manipulate records in the database. The client part and data collection from the form have also been worked out.
-###### Project requires the dotenv environment variables.
+This is Simple Web service for adding information about users to the database. A server and a CRUD-api have been written for the project to access and manipulate records in the database. The client part and data collection from the form have also been worked out. **Project requires the dotenv environment variables.**
 
 
 #### Toolkit: 
