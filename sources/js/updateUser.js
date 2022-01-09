@@ -13,17 +13,22 @@ const putData = async (url, data) => {
     return await res.json();
 };
 
-AddForm.addEventListener('submit', event => {
-    event.preventDefault();
-    const formData = new FormData(AddForm);
-    const objData = Object.fromEntries(formData.entries());
-    const jsonData = JSON.stringify(objData);
-    putData(`http://localhost:5000/api/users/${objData.id}`, jsonData)
-        .then(userData => console.log(userData))
-        .then(() => {
-            alert('Data Changed Succesfuly');
-            location.assign('/');
-        })
-        .then(() => location.assign('/'))
-        .catch(() => console.log('Error'));
-});
+
+const updateUser = (callfetch) => {
+    AddForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const formData = new FormData(AddForm);
+        const objData = Object.fromEntries(formData.entries());
+        const jsonData = JSON.stringify(objData);
+        callfetch(`http://localhost:5000/api/users/${objData.id}`, jsonData)
+            .then(userData => console.log(userData))
+            .then(() => {
+                alert('Data Changed Succesfuly');
+                location.assign('/');
+            })
+            .then(() => location.assign('/'))
+            .catch(() => console.log('Error'));
+    });
+};
+
+updateUser(putData);

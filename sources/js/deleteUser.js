@@ -7,6 +7,7 @@ const deleteData = async url => {
     return await res.json();
 };
 
+
 const deleteBut = document.querySelectorAll('.delete-btn');
 const deleteUser = () => {
     if (window.location.pathname === '/') {
